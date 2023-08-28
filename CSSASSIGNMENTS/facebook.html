@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: 0;
+            }
+            body{
+                
+                font-family: sans-serif;
+                color: white;
+                background-image: url("https://officechai.com/wp-content/uploads/2015/07/flipkart.jpg");
+            }
+            #dark{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.348);
+                
+            }
+
+            #main-container{
+                width: 40vw;
+                height: 70vh;
+                background-color: yellow;
+                display: flex;
+            
+                
+            }
+            #left{
+                width: 40%;
+                background-color: blue;
+                display: flex;
+                flex-direction: column;
+                height: 65vh;
+                justify-content: space-between;
+                padding: 20px;
+                
+            }
+            #login-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 7rem;
+
+            }
+            #right{
+                width: 60%;
+                background-color: white;
+                padding: 20px;
+                height: 65vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid black;
+            }
+            #inputcon{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-around;
+                height: 9rem;
+            }
+            #inputtxt{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 100%;
+                height: 6rem;
+            }
+            #inputtxt > input{
+                padding: 6px 0px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;
+            }
+            #inputcon > input:nth-child(1){
+                background-color: rgb(255, 94, 0);
+                color: white;
+                font-weight: bold;
+                border: none;
+                padding: 10px;
+                margin-top: 1rem;
+            }
+            #inputcon > input:nth-child(3){
+                background-color: white;
+                color: blue;
+                font-weight: bold;
+                border: none;
+                padding: 10px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }#links > a{
+                font-size: 14px;
+            }#forget{
+                position: absolute;
+                top: 11.2rem;
+                left: 57rem;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="dark">
+        <div id="main-container">
+            <div id="left">
+             <div id="login-text">
+                <h1>Login</h1>
+                <p>Get access to your Orders, Wishlist and Recommendations</p>
+             </div>
+            <div>
+                <img src="/logo/flipkart-logo-39919.png" alt="image">
+            </div>
+            </div>
+            <div id="right">
+             <form>
+              <div id="inputtxt">
+                <input type="text" placeholder="Enter Email/Mobile Number">
+                <input type="password" placeholder="Password">
+                <a href="#" id="forget">Forget</a>
+              </div>
+              <div>
+                <p style="font-size: 12px; color: black;">By contuning you agree to flipkart <a href="#">term of use</a> and <a href="#">privecy policy</a></p>
+              </div>
+              <div id="inputcon">
+                <input type="submit" value="LOGIN">
+                <p style="text-align: center; color: rgba(0, 0, 0, 0.79);">OR</p>
+                <input type="submit" value="Request OTP">
+              </div>
+             </form>
+             <div id="footer">
+                <div id="links">
+                    <a href="#">New to flipkart?</a> <a href="#">Create an account</a>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

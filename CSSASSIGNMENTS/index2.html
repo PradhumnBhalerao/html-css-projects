@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #percent{
+            background-color: blue;
+            max-width: 50%;
+            height: 70px;
+            
+        }
+        #percentunit{
+            background-color: pink;
+            max-width: 50%;
+            height: 40px;
+        }
+        #em{
+            font-size: 10em;
+            background-color: blue; /*i em its totaly based o parent font size default value is 16px*/
+        }#rem{
+            font-size: 10rem; /*in rem its doest not chnage there font size based on parent but it can be change when the parent is html or root default value is 16px*/
+            background-color: blue;
+        }#vhvw{
+            max-width: 50vw;
+            height: 80px;
+            background-color: red;
+        }#vhvw2{
+            width: 30vw;
+            background-color: blueviolet;
+            height: 80px;
+        }
+        .box{
+            background-color: blueviolet;
+            border: 2px solid yellow;
+            max-width: 100px;
+            height:100px;
+            position: relative;
+        }#box1{
+            background-color: aquamarine;
+            z-index: -1;
+        }#box2{
+            background-color: red;
+            margin-top: -30px;
+            margin-bottom: 100px;
+            z-index: -1;
+        }#box3{
+            background-color: pink;
+            margin-top: -230px;
+            margin-bottom: -20px;
+            margin-left: 20px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 2px solid red;">pixel unit</div>
+    <hr>
+    <div id="percent">
+        <div id="percentunit">percent unit</div>
+    </div>
+    <hr>
+    <div id="em">em unit</div>
+    <hr>
+    <div id="rem">rem unit</div>
+    <hr>
+    <div id="vhvw">
+        <div id="vhvw2">vh vw unit</div>
+    </div>
+    <hr>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+</body>
+</html>
